@@ -28,4 +28,4 @@
 
 * **benchmarking challenges**: attempts to evaluate the fine-tuned models using industry-standard benchmarks were unsuccessful. The only one I managed to get to work was [MMLU](https://docs.confident-ai.com/docs/benchmarks-mmlu) (massive multitask language understanding) – this evaluation consumed significant gpu compute resources and, annoyingly, resulted in a score of 0.0 for the fine-tuned models. This outcome, despite the models generating pretty coherent responses, probably means that MMLU is ill-suited for evaluating models specifically trained on CoT output.
 
-
+* I ended up resorting to qualitative human evaluation i.e. asking my best-performing gemma-2-2b-LoRA-4bit the same [20 questions](https://github.com/CurseARealSword/nlp_module_4_QA/blob/main/human_eval_answers.csv) from the a GPT-4-generated dataset of common questions.
